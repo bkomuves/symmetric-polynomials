@@ -95,6 +95,7 @@ aut part = product $ map factorial es where
   es = map snd $ toExponentialForm part   
 
 --------------------------------------------------------------------------------
+{-
 -- * Partition functions  (TODO: move into combinat)
 
 conjugateLexicographicCompare :: Partition -> Partition -> Ordering
@@ -123,6 +124,7 @@ dominanceCompare p q
 -- {- LEXICOGRAPHIC ordering is a refinement of dominance partial ordering -}
 -- let test n = [ p >= q | p <- partitions n , q <-partitions n ,  p `dominates` q ]
 -- and (test 20)
+-}
 
 --------------------------------------------------------------------------------
 
